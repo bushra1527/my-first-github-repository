@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bushart Vlogs 💎</title>
+    <style>
+      body {
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/847/original/light-gray-concrete-wall_53876-89532.jpg?1706039097);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+
+      h1 {
+        color: #000000;
+        text-align: center;
+        font-size: 40px;
+        font-weight: bolder;
+        padding: 20px;
+        margin: 60px auto 20px;
+      }
+
+      h2 {
+        max-width: 1000px;
+        font-style: italic;
+        font-size: 32px;
+        text-align: center;
+        background: linear-gradient(to right, #4387f4, rgb(245, 216, 73));
+        color: #000000;
+        margin: 15px auto;
+        padding: 10px;
+        line-height: normal;
+      }
+
+      .content-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      p {
+        font-style: italic;
+        text-align: justify;
+        text-justify: inter-word;
+        letter-spacing: -0.05em;
+        width: 48%;
+        padding: 10px;
+        font-size: 20px;
+        color: #000000;
+        font-weight: bold;
+        line-height: 1.3em;
+        margin: 0 auto;
+      }
+
+      button {
+        font-weight: bold;
+        display: block;
+        margin: 20px auto;
+        padding: 14px 20px;
+        font-size: 16px;
+        text-decoration: none;
+        background-color: #4387f4; /* Choose your color */
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        border: 1px solid #4387f4;
+        line-height: 22px;
+        transition: all 200ms ease;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+      }
+      button:hover {
+        background-color: rgb(245, 216, 73);
+        color: rgb(20, 103, 246);
+      }
+      img {
+        width: 48%;
+        height: 350px;
+        border-radius: 20px;
+        margin-top: 0 auto;
+        padding: 10px;
+      }
+      .footer {
+        color: black;
+        font-size: small;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><em>Welcome to Bushart Vlogs!</em></h1>
+
+    <h2>Hi! I'm Bushra Khugyani, Your Stone Art Guide!</h2>
+    <div class="content-container">
+      <p>
+        Explore the captivating world of stone artistry on Bushart Vlogs, where
+        creativity meets nature. Immerse yourself in the fusion of raw, natural
+        beauty and artistic expression through meticulously crafted stone. Each
+        piece tells a unique story, blending form and texture to evoke emotions
+        and showcase the timeless elegance of nature's canvas. Join me on a
+        journey of discovery and appreciation for the artistry that shines in
+        every stone. Unearth the beauty, embrace the craft, and let the stones
+        whisper their tales through the hands of an artist. Explore my YouTube
+        channel
+        <span
+          ><a
+            href="https://www.youtube.com/@bushartvlogs1527"
+            target="_blank"
+            style="color: #4387f4"
+            ><strong>Bushart Vlogs</strong></a
+          ></span
+        >
+        and witness the magic of stone art at its finest.
+      </p>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/845/original/Hand-painted-pebble-sunset-1.jpg?1706038990"
+        alt="Stone Art Image"
+      />
+    </div>
+    <button>Let's Connect</button>
+    <hr />
+    <div class="footer"><strong>Created by Bushra Khugyani</strong></div>
+    <br /><br /><br /><br />
+    <script>
+      function userResponse() {
+        let name = prompt("What is your name?");
+        let visitedResponse = prompt(
+          "Have you visited and subscribed to my YouTube channel? (yes/no)"
+        );
+
+        if (visitedResponse === "yes") {
+          alert(
+            "Thank you for visiting and subscribing to my YouTube channel, it means a lot 😍 see u soon " +
+              name
+          );
+        } else {
+          alert("I hope you will visit next time! ☹️ " + name);
+        }
+      }
+      let connectButton = document.querySelector("button");
+      connectButton.addEventListener("click", userResponse);
+    </script>
+  </body>
+</html>
